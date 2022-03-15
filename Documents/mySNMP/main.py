@@ -9,8 +9,10 @@ sys.stdout = open('stdout2.txt', 'w')
 
 hosts = ["10.52.31.252", "10.52.31.253", "10.52.16.163"]
 
-for host in hosts:
-    cmd = "ping " + host + " -n 4"
+# for host in hosts:
+for i in range(254):
+    host = "10.52.16." + str(i)
+    # cmd = "ping " + host + " -n 1"
 
     # res = os.popen(cmd).read().strip().split('\n')
     res = os.system("ping " + host + " -n 1")
