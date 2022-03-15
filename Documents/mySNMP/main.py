@@ -1,11 +1,26 @@
 
+# -*- coding: utf-8 -*-
+
 import os
 import sys
+import datetime
 
 sys.stdout = open('stdout2.txt', 'w')
 
-hostname = "127.0.0.2"
-cmd = "ping " + hostname + " -c 4"
+hosts = ["10.52.31.252", "10.52.31.253", "10.52.16.163"]
+
+for host in hosts:
+    cmd = "ping " + host + " -n 4"
+
+    # res = os.popen(cmd).read().strip().split('\n')
+    res = os.system("ping " + host + " -n 1")
+
+    if res == 0:
+        print(host, "ping ok in ", datetime.datetime.now())
+    
+    else:
+        print(host, "ping not ok in ", datetime.datetime.now())
+
 
 # Ping_response = os.system("ping " + hostname)
 
@@ -19,10 +34,9 @@ cmd = "ping " + hostname + " -c 4"
 
 
 
-res = os.popen(cmd).read().strip().split('\n')
-
-for r in res:
-    print(r)
+    # res = os.popen(cmd).read().strip().split('\n')
+    # for r in res:
+    #     print(r)
 # res = os.popen("ifconfig").read().strip().split()
 # print(res)
 
