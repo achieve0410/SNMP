@@ -18,10 +18,10 @@ informs = [{
     }
     #, {
     #     'device_type': 'juniper_junos',
-    #     'ip': '10.52.54.237',
-    #     'username': 'martadmin',
-    #     'password': 'wkatlf@01$',
-    #     # 'secret': 'tmxkxm@00&',
+    #     'ip': '',
+    #     'username': '',
+    #     'password': '',
+    #     # 'secret': '',
     #     'port': '22',
     # }
 ]
@@ -74,10 +74,6 @@ for inform in informs:
     compare = net_connect.send_config_set(mycommand, exit_config_mode=False)
     print(compare)
 
-<<<<<<< HEAD
     ## commit
     com_output = net_connect.commit()
     print(com_output)
-=======
-    print(compare)
->>>>>>> f095168369c9f076f841278090db2ec6716a900a
