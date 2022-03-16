@@ -3,17 +3,17 @@ from netmiko import ConnectHandler
 
 informs = [{
         'device_type': 'juniper_junos',
-        'ip': '10.52.54.236',
-        'username': 'martadmin',
-        'password': 'wkatlf@01$',
-        # 'secret': 'tmxkxm@00&',
+        'ip': '',
+        'username': '',
+        'password': '',
+        # 'secret': '',
         'port': '22',
     }, {
         'device_type': 'juniper_junos',
-        'ip': '10.52.54.237',
-        'username': 'martadmin',
-        'password': 'wkatlf@01$',
-        # 'secret': 'tmxkxm@00&',
+        'ip': '',
+        'username': '',
+        'password': '',
+        # 'secret': '',
         'port': '22',
     }
 ]
