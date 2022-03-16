@@ -3,10 +3,10 @@ from netmiko import ConnectHandler
 
 # inform = {
 #     'device_type': 'cisco_ios',
-#     'ip': '10.52.31.241',
-#     'username': 'wonhyo.choi',
-#     'password': 'Pa$$w0rdLM',
-#     'secret': 'tmxkxm@00&',
+#     'ip': '',
+#     'username': '',
+#     'password': '',
+#     'secret': '',
 #     'port': '22',
 # }
 
@@ -18,10 +18,10 @@ from netmiko import ConnectHandler
 
 inform = {
     'device_type': 'juniper_junos',
-    'ip': '10.52.54.237',
-    'username': 'martadmin',
-    'password': 'wkatlf@01$',
-    # 'secret': 'tmxkxm@00&',
+    'ip': '',
+    'username': '',
+    'password': '',
+    # 'secret': '',
     'port': '22',
 }
 
